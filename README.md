@@ -1,0 +1,2 @@
+# Cluster0
+  ConnectionString connectionString = new ConnectionString("mongodb+srv://<username>:<password>@cluster0.urwag.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"); MongoClientSettings settings = MongoClientSettings.builder()         .applyConnectionString(connectionString)         .build(); MongoClient mongoClient = MongoClients.create(settings); MongoDatabase database = mongoClient.getDatabase("test");
